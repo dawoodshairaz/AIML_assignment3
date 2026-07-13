@@ -74,7 +74,7 @@ st.title("🏠 House Price Prediction")
 
 area = st.slider("Area", 500, 5000, 1500)
 bedrooms = st.slider("Bedrooms", 1, 6, 3)
-bathrooms = st.slider("Bathrooms", 1, 5, 2
+bathrooms = st.slider("Bathrooms", 1, 5, 2)
 
 
 
