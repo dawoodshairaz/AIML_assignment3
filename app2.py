@@ -1,8 +1,3 @@
-import pandas as pd
-import joblib
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.preprocessing import StandardScaler
 
 # -*- coding: utf-8 -*-
 """app2.ipynb
@@ -67,12 +62,16 @@ print("Model trained and saved successfully!")
 
 app_code = """
 
-import streamlit as st
-import joblib as jb
+import pickle
 
-model = jb.load('house_price_knn_model.pkl')
-scaler = jb.load('scaler.pkl')
-columns = jb.load('columns.pkl')
+with open("house_price_knn_model.pkl", "rb") as file:
+    model = pickle.load(file)
+
+with open("scaler.pkl", "rb") as file:
+    scaler = pickle.load(file)
+
+with open("columns.pkl", "rb") as file:
+    columns = pickle.load(file)
 
 
 st.title("🏠 House Price Prediction")
