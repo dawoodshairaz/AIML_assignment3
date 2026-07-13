@@ -1,3 +1,9 @@
+import pandas as pd
+import joblib
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.preprocessing import StandardScaler
+
 # -*- coding: utf-8 -*-
 """app2.ipynb
 
@@ -62,7 +68,6 @@ print("Model trained and saved successfully!")
 app_code = """
 
 import streamlit as st
-import pandas as pd
 import joblib as jb
 
 model = jb.load('house_price_knn_model.pkl')
