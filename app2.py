@@ -63,11 +63,11 @@ app_code = """
 
 import streamlit as st
 import pandas as pd
-import joblib
+import joblib as jb
 
-model = joblib.load('house_price_knn_model.pkl')
-scaler = joblib.load('scaler.pkl')
-columns = joblib.load('columns.pkl')
+model = jb.load('house_price_knn_model.pkl')
+scaler = jb.load('scaler.pkl')
+columns = jb.load('columns.pkl')
 
 
 st.title("🏠 House Price Prediction")
