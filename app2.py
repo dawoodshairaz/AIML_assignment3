@@ -13,7 +13,7 @@ area = st.slider("Area", 500, 5000, 1500)
 bedrooms = st.slider("Bedrooms", 1, 6, 3)
 bathrooms = st.slider("Bathrooms", 1, 5, 2)
 floors = st.slider("Floors", 1, 5, 2)
-year_built = st.slider("Year Built", 1900, 2025, 2000)
+year_built = st.slider("Year Built", 1900, 2026, 2000)
 
 # These options MUST match the model
 location = st.selectbox(
